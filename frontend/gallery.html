@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Viện - Du Lịch Bản Yên Hòa</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Yên Hòa Discovery</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="attractions.html">Điểm Đến</a></li>
+                <li><a href="gallery.html">Thư Viện</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1>Thư Viện Hình Ảnh & Video</h1>
+        </section>
+
+        <section id="gallery-container" class="container">
+            <div id="gallery-grid" class="gallery-grid-container">
+                <!-- Hình ảnh và video sẽ được JS chèn vào đây từ API -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Du Lịch Yên Hòa. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/api_handler.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Modal Structure for Image Viewer -->
+    <div id="image-modal" class="modal">
+        <span class="close-button">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+    </div>
+
+</body>
+</html>

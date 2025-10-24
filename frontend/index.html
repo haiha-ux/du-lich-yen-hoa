@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du Lịch Bản Yên Hòa - Nghệ An</title>
+    <meta name="description" content="Khám phá vẻ đẹp hoang sơ và văn hóa đặc sắc của Bản Yên Hòa, xã Mỹ Lý, tỉnh Nghệ An.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Yên Hòa Discovery</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="attractions.html">Điểm Đến</a></li>
+                <li><a href="gallery.html">Thư Viện</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <!-- Ảnh hero banner sẽ được đặt làm background qua CSS -->
+            <div class="hero-content">
+                <h1>Bản Yên Hòa: Trái Tim Miền Tây Xứ Nghệ</h1>
+                <p>Nơi vẻ đẹp thiên nhiên hòa quyện cùng bản sắc văn hóa dân tộc Thái.</p>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2 id="about-title"></h2>
+            <p id="about-content"></p>
+        </section>
+
+        <!-- Khu vực mới cho các sections -->
+        <section id="content-sections" class="container">
+            <!-- Các section sẽ được chèn vào đây bằng JavaScript -->
+        </section>
+
+        <section id="featured-attractions" class="container">
+            <h2>Khám Phá Các Điểm Đến</h2>
+            <div id="attractions-grid" class="grid-container">
+                <!-- Các điểm đến sẽ được JS chèn vào đây từ API -->
+            </div>
+             <div class="text-center" style="margin-top: 2rem;">
+                <a href="attractions.html" class="btn">Xem tất cả điểm đến</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Du Lịch Yên Hòa. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/api_handler.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
