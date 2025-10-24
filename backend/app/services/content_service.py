@@ -51,9 +51,9 @@ class ContentService:
 
     def _prefix_image_urls(self, item):
         """Helper function to add /data prefix to image URLs."""
-        if 'imageUrl' in item and not item['imageUrl'].startswith('images/'):
+        if 'imageUrl' in item and not item['imageUrl'].startswith('/data/'):
             item['imageUrl'] = f"/data/{item['imageUrl']}"
-        if 'url' in item and not item['url'].startswith('images/'):
+        if 'url' in item and not item['url'].startswith('/data/'):
             item['url'] = f"/data/{item['url']}"
         return item
 
