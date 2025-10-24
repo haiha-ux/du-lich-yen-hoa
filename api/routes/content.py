@@ -13,6 +13,11 @@ from backend.app.services.content_service import content_service
 # Tạo một Blueprint. Blueprint giống như một mini-app, giúp tổ chức các route.
 content_bp = Blueprint('content', __name__)
 
+@content_bp.route('/content', methods=['GET'])
+def get_full_content():
+    """API endpoint để lấy toàn bộ nội dung đã được xử lý."""
+    return jsonify(content_service.get_full_content())
+
 @content_bp.route('/about', methods=['GET'])
 def get_about():
     """API endpoint để lấy thông tin giới thiệu."""

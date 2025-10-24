@@ -31,6 +31,23 @@ class ContentService:
         """
         return self._data.get('about', {})
 
+    def get_full_content(self):
+        """
+        Lấy toàn bộ dữ liệu và xử lý đường dẫn ảnh cho tất cả các mục.
+        """
+        full_data = self._data.copy()
+        
+        if 'attractions' in full_data:
+            full_data['attractions'] = [self._prefix_image_urls(attr) for attr in full_data['attractions']]
+        
+        if 'gallery' in full_data:
+            full_data['gallery'] = [self._prefix_image_urls(item) for item in full_data['gallery']]
+            
+        if 'sections' in full_data:
+            full_data['sections'] = [self._prefix_image_urls(sec) for sec in full_data['sections']]
+            
+        return full_data
+
     def _prefix_image_urls(self, item):
         """Helper function to add /data prefix to image URLs."""
         if 'imageUrl' in item and not item['imageUrl'].startswith('/data/'):
