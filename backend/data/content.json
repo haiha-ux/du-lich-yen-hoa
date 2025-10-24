@@ -8,19 +8,19 @@
       "id": "landscape",
       "title": "Phong Cảnh & Địa Danh: Nơi Đất Trời Giao Hòa",
       "content": "Vẻ đẹp của Yên Hòa được dệt nên từ màu xanh bạt ngàn của những cánh rừng nguyên sinh, những thửa ruộng bậc thang uốn lượn mềm mại và dòng suối Nậm Nơn trong vắt. Khí hậu nơi đây trong lành, dễ chịu, mỗi mùa lại mang một vẻ đẹp riêng, từ sắc xanh tươi của mùa hạ đến mùa vàng óng ả của mùa thu.",
-      "imageUrl": "/data/images/TC_AI/bản Yên Hòa.jpg"
+      "imageUrl": "images/TC_AI/bản Yên Hòa.jpg"
     },
     {
       "id": "culture",
       "title": "Văn Hóa & Con Người: Sự Ấm Áp Từ Trái Tim",
       "content": "Điều để lại ấn tượng sâu sắc nhất chính là con người Yên Hòa. Họ chân chất, mộc mạc và vô cùng hiếu khách. Bạn sẽ được chào đón như một người bạn thân. Văn hóa người Thái sống động qua nghề dệt thổ cẩm truyền thống, những điệu múa xòe uyển chuyển và các lễ hội cộng đồng ấm cúng.",
-      "imageUrl": "/data/images/TC_AI/Hoạt động.jpg"
+      "imageUrl": "images/TC_AI/Hoạt động.jpg"
     },
     {
       "id": "food",
       "title": "Ẩm Thực: Hương Vị Đích Thực Của Núi Rừng",
       "content": "Ẩm thực Yên Hòa là sự kết tinh của những sản vật tươi ngon nhất từ thiên nhiên. Hãy thử món Cơm Lam thơm dẻo nấu trong ống tre, Pa Pỉnh Tộp (cá nướng) đậm đà gia vị mắc khén, và thưởng thức rượu cần nồng ấm bên bếp lửa cùng người dân bản địa.",
-      "imageUrl": "/data/images/gallery_4.jpg"
+      "imageUrl": "images/gallery_4.jpg"
     }
   ],
   "attractions": [
@@ -29,7 +29,7 @@
       "name": "Tháp Cổ Yên Hòa",
       "summary": "Di tích kiến trúc nghệ thuật độc đáo, mang đậm dấu ấn lịch sử và tâm linh của vùng đất.",
       "description": "Trung tâm của bản làng là một tòa tháp cổ bí ẩn, một di tích kiến trúc nghệ thuật độc đáo mang đậm dấu ấn lịch sử. Đứng lặng lẽ giữa đất trời, ngọn tháp là minh chứng cho một quá khứ vàng son và là niềm tự hào của người dân nơi đây.",
-      "imageUrl": "/data/images/TC_AI/Tháp cổ Yên Hòa.jpg",
+      "imageUrl": "images/TC_AI/Tháp cổ Yên Hòa.jpg",
       "featured": true
     },
     {
@@ -37,7 +37,7 @@
       "name": "Nhà Sàn Truyền Thống",
       "summary": "Khám phá kiến trúc nhà sàn độc đáo và tìm hiểu các phong tục, tập quán của người dân địa phương.",
       "description": "Kiến trúc nhà sàn của người Thái không chỉ để ở mà còn là một triết lý sống hài hòa với thiên nhiên. Những ngôi nhà gỗ vững chãi, lợp mái tranh, nép mình bên sườn đồi tạo nên một bức tranh làng quê thanh bình và mộc mạc.",
-      "imageUrl": "/data/images/TC_AI/Nhà sàn truyền thống.jpg",
+      "imageUrl": "images/TC_AI/Nhà sàn truyền thống.jpg",
       "featured": true
     },
     {
@@ -45,7 +45,7 @@
       "name": "Dòng Suối Nậm Nơn",
       "summary": "Dòng suối hiền hòa là nguồn sống, là nơi diễn ra các hoạt động sinh hoạt cộng đồng.",
       "description": "Dòng suối hiền hòa là nguồn sống, là nơi diễn ra các hoạt động sinh hoạt cộng đồng. Lắng nghe tiếng suối chảy róc rách, chiêm ngưỡng cảnh người dân quăng chài bắt cá là những khoảnh khắc bình yên khó tìm thấy ở nơi khác.",
-      "imageUrl": "/data/images/TC_AI/suối Nâm Đơn.jpg",
+      "imageUrl": "images/TC_AI/suối Nậm Nơn.jpg",
       "featured": true
     },
     {
@@ -53,16 +53,16 @@
       "name": "Ruộng bậc thang Yên Hòa",
       "summary": "Chiêm ngưỡng vẻ đẹp của những thửa ruộng bậc thang uốn lượn quanh sườn đồi, đặc biệt vào mùa lúa chín.",
       "description": "Những thửa ruộng bậc thang ở Yên Hòa không chỉ là nơi canh tác mà còn là một tác phẩm nghệ thuật của con người và thiên nhiên. 'Mùa vàng' (khoảng tháng 9 - 10) là thời điểm đẹp nhất, khi cả thung lũng được nhuộm một màu vàng óng của lúa chín.",
-      "imageUrl": "/data/images/ruong_bac_thang.jpg",
+      "imageUrl": "images/ruong_bac_thang.jpg",
       "featured": false
     }
   ],
   "gallery": [
-    { "id": 1, "url": "/data/images/TC_AI/bản Yên Hòa.jpg", "alt": "Toàn cảnh bản Yên Hòa thanh bình" },
-    { "id": 2, "url": "/data/images/TC_AI/Hoạt động.jpg", "alt": "Hoạt động sinh hoạt của người dân" },
-    { "id": 3, "url": "/data/images/TC_AI/Nhà sàn truyền thống.jpg", "alt": "Một ngôi nhà sàn truyền thống của người Thái" },
-    { "id": 4, "url": "/data/images/TC_AI/suối Nâm Đơn.jpg", "alt": "Dòng suối Nậm Nơn trong xanh" },
-    { "id": 5, "url": "/data/images/TC_AI/Tháp cổ Yên Hòa.jpg", "alt": "Tháp cổ Yên Hòa uy nghiêm" },
-    { "id": 6, "url": "/data/images/gallery_4.jpg", "alt": "Mâm cơm thịnh soạn với các món đặc sản địa phương" }
+    { "id": 1, "url": "images/TC_AI/bản Yên Hòa.jpg", "alt": "Toàn cảnh bản Yên Hòa thanh bình" },
+    { "id": 2, "url": "images/TC_AI/Hoạt động.jpg", "alt": "Hoạt động sinh hoạt của người dân" },
+    { "id": 3, "url": "images/TC_AI/Nhà sàn truyền thống.jpg", "alt": "Một ngôi nhà sàn truyền thống của người Thái" },
+    { "id": 4, "url": "images/TC_AI/suối Nậm Nơn.jpg", "alt": "Dòng suối Nậm Nơn trong xanh" },
+    { "id": 5, "url": "images/TC_AI/Tháp cổ Yên Hòa.jpg", "alt": "Tháp cổ Yên Hòa uy nghiêm" },
+    { "id": 6, "url": "images/gallery_4.jpg", "alt": "Mâm cơm thịnh soạn với các món đặc sản địa phương" }
   ]
 }
