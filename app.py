@@ -58,9 +58,12 @@ def create_app():
 
     return app
 
-# --- Main Execution ---
+# --- Vercel Deployment ---
+# Vercel cần một biến 'app' toàn cục để chạy ứng dụng
+app = create_app()
+
+# --- Main Execution (for local development) ---
 if __name__ == '__main__':
-    app = create_app()
     print("========================================================")
     print(" Server đã sẵn sàng!")
     print(" Vui lòng truy cập trang web tại: http://127.0.0.1:5000")
