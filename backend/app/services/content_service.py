@@ -33,36 +33,15 @@ class ContentService:
 
     def get_full_content(self):
         """
-        Lấy toàn bộ dữ liệu và xử lý đường dẫn ảnh cho tất cả các mục.
+        Lấy toàn bộ dữ liệu.
         """
-        full_data = self._data.copy()
-        
-        if 'attractions' in full_data:
-            full_data['attractions'] = [self._prefix_image_urls(attr) for attr in full_data['attractions']]
-        
-        if 'gallery' in full_data:
-            full_data['gallery'] = [self._prefix_image_urls(item) for item in full_data['gallery']]
-            
-        if 'sections' in full_data:
-            full_data['sections'] = [self._prefix_image_urls(sec) for sec in full_data['sections']]
-            
-        return full_data
-
-
-    def _prefix_image_urls(self, item):
-        """Helper function to add /data prefix to image URLs."""
-        if 'imageUrl' in item and not item['imageUrl'].startswith('/data/'):
-            item['imageUrl'] = f"/data/{item['imageUrl']}"
-        if 'url' in item and not item['url'].startswith('/data/'):
-            item['url'] = f"/data/{item['url']}"
-        return item
+        return self._data
 
     def get_all_attractions(self):
         """
         Lấy tất cả các điểm đến.
         """
-        attractions = self._data.get('attractions', [])
-        return [self._prefix_image_urls(attr) for attr in attractions]
+        return self._data.get('attractions', [])
 
     def get_featured_attractions(self):
         """
@@ -75,8 +54,7 @@ class ContentService:
         """
         Lấy tất cả các mục trong thư viện ảnh.
         """
-        gallery = self._data.get('gallery', [])
-        return [self._prefix_image_urls(item) for item in gallery]
+        return self._data.get('gallery', [])
 
 # Tạo một instance của service để có thể import và sử dụng ở nơi khác
 content_service = ContentService()
