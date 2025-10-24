@@ -31,11 +31,20 @@ class ContentService:
         """
         return self._data.get('about', {})
 
+    def _prefix_image_urls(self, item):
+        """Helper function to add /data prefix to image URLs."""
+        if 'imageUrl' in item and not item['imageUrl'].startswith('/data/'):
+            item['imageUrl'] = f"/data/{item['imageUrl']}"
+        if 'url' in item and not item['url'].startswith('/data/'):
+            item['url'] = f"/data/{item['url']}"
+        return item
+
     def get_all_attractions(self):
         """
         Lấy tất cả các điểm đến.
         """
-        return self._data.get('attractions', [])
+        attractions = self._data.get('attractions', [])
+        return [self._prefix_image_urls(attr) for attr in attractions]
 
     def get_featured_attractions(self):
         """
@@ -48,7 +57,8 @@ class ContentService:
         """
         Lấy tất cả các mục trong thư viện ảnh.
         """
-        return self._data.get('gallery', [])
+        gallery = self._data.get('gallery', [])
+        return [self._prefix_image_urls(item) for item in gallery]
 
 # Tạo một instance của service để có thể import và sử dụng ở nơi khác
 content_service = ContentService()
